@@ -6,7 +6,7 @@ var word = new Word();
 var totalGuesses = word.letters.length * 2; //10;
 var lettersRemaining = word.letters.length;
 
-function runGame() {
+function run() {
     
     word.showLetters();
     inquirer.prompt([
@@ -19,15 +19,15 @@ function runGame() {
        
         guess(response.letter.toLowerCase());
         if (!over) {
-            runGame();
+            run();
         } else {
-            restartGame();
+            restart();
         }
     })
 }
 
 
-runGame();
+run();
 
 
 function guess(letter) {
@@ -73,7 +73,7 @@ function guess(letter) {
 
 
 
-function restartGame() {
+function restart() {
     inquirer
         .prompt([
             {
@@ -90,7 +90,7 @@ function restartGame() {
                 word = new Word();
                 totalGuesses = word.letters.length + 5; 
                 lettersRemaining = word.letters.length;
-                runGame();
+                run();
             } else {
                 console.log("\nPlease Play Again\n");
                 return
