@@ -1,0 +1,24 @@
+{
+  "name": "Constructor-Word-Guess",
+  "version": "1.0.0",
+  "description": "Week 11 Homework",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshua93beckford/Constructor-Word-Guess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshua93beckford/Constructor-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/joshua93beckford/Constructor-Word-Guess#readme"
+}
